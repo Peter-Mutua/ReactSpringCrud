@@ -3,7 +3,7 @@ package com.example.tutorials_crud.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tutorials")
+@Table(name = "tbl_tutorials")
 public class Tutorial {
 
     @Id
@@ -13,7 +13,7 @@ public class Tutorial {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "description")
+    @Column(name = "description", length = 1024)
     private String description;
 
     @Column(name = "published")
